@@ -1,0 +1,11 @@
+{
+  "category": "standard",
+  "contact": {
+    "name": "Test User 9",
+    "email": "user9@test.com"
+  },
+  "skills": [
+    "Python",
+    "AWS"
+  ]
+}

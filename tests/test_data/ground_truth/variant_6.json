@@ -1,0 +1,10 @@
+{
+  "contact": {
+    "name": "Test User 6",
+    "email": "user6@test.com"
+  },
+  "skills": [
+    "Python",
+    "AWS"
+  ]
+}

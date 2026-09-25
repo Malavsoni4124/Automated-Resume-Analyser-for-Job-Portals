@@ -1,0 +1,20 @@
+{
+  "contact": {
+    "name": "Alice Walker",
+    "email": "alice@walker.net"
+  },
+  "experience": [
+    {
+      "company": "Meta"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Stanford University"
+    }
+  ],
+  "skills": [
+    "SQL",
+    "Python"
+  ]
+}

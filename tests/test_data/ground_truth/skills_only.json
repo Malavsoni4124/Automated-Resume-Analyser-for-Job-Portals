@@ -1,0 +1,12 @@
+{
+  "contact": {
+    "name": "Jane Smith",
+    "email": "jane.smith@email.com"
+  },
+  "skills": [
+    "React",
+    "JavaScript",
+    "Docker",
+    "Kubernetes"
+  ]
+}

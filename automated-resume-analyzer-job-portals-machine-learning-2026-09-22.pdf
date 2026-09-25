@@ -1,0 +1,1095 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 595
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F2 22 Tf
+25.2999999999999972 TL
+0.071 0.094 0.149 rg
+45.354330708661422 779.5277952755905062 Td
+(Project Export) Tj
+ET
+BT
+/F1 11 Tf
+12.6499999999999986 TL
+0.29 0.333 0.408 rg
+45.354330708661422 751.1813385826771992 Td
+(Domain: Machine Learning Export: Single project Projects: 1 Generated: 22/09/2026, 21:59:38) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.58 0.639 0.722 rg
+45.354330708661422 25.5118110236220446 Td
+(Persevex Project Dashboard) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.58 0.639 0.722 rg
+509.2856692913384791 25.5118110236220446 Td
+(Page 1 of 4) Tj
+ET
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 6269
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F2 16 Tf
+18.3999999999999986 TL
+0.071 0.094 0.149 rg
+45.354330708661422 785.1970866141732586 Td
+(1. Automated Resume Analyzer for Job Portals) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.392 0.455 0.545 rg
+45.354330708661422 749.7640157480315111 Td
+(Domain: Machine Learning Slug: automated-resume-analyzer-job-portals Created: Unknown date) Tj
+ET
+BT
+/F2 11 Tf
+12.6499999999999986 TL
+0.055 0.341 0.267 rg
+45.354330708661422 720.0002362204724022 Td
+(Summary) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 702.9923622047243725 Td
+(This project involves building an automated system to parse resumes, extract key information, and identify) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 688.2522047244094665 Td
+(relevant skills and experiences. Certification confirms expertise in Natural Language Processing \(NLP\), information) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 673.5120472440944468 Td
+(extraction, and data structuring from unstructured text.) Tj
+ET
+BT
+/F2 11 Tf
+12.6499999999999986 TL
+0.055 0.341 0.267 rg
+45.354330708661422 643.1813385826770855 Td
+(Full Content) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.071 0.094 0.149 rg
+45.354330708661422 617.6695275590550409 Td
+(Project Overview) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 589.8899999999999864 Td
+(Recruitment processes are often bottlenecked by the sheer volume of applications. A single job posting can attract) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 574.5829133858267141 Td
+(hundreds of resumes, making manual screening impossible. This project aims to build the core engine of an) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 559.2758267716534419 Td
+(Applicant Tracking System \(ATS\)—a tool that automatically reads resumes, understands the content, and) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 543.9687401574801697 Td
+(structures the data for easy filtering.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 510.2364566929132366 Td
+(As an NLP Intern, you will build a sophisticated parser capable of ingesting resumes in various formats \(PDF,) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 494.9293700787400212 Td
+(DOCX\) and converting them into a standardized JSON format. This project is a deep dive into unstructured text) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 479.622283464566749 Td
+(processing, Named Entity Recognition \(NER\), and pattern matching.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 445.8899999999998158 Td
+(---) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.071 0.094 0.149 rg
+45.354330708661422 403.6537795275588678 Td
+(Key Objectives & Workflow) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.071 0.094 0.149 rg
+45.354330708661422 363.1183464566926773 Td
+(1. Document Ingestion & Text Extraction) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 335.3388188976375091 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 335.3388188976375091 Td
+(Format Handling: Resumes come in different file types. You must implement robust file) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 320.5986614173225462 Td
+(reading capabilities using libraries like pdfminer.six \(for PDFs\) and python-docx \(for Word) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 305.8585039370076402 Td
+(documents\).) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 287.7167716535431055 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 287.7167716535431055 Td
+(Text Cleaning: Raw extraction often includes noise \(headers, footers, page numbers, special characters\).) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 272.9766141732281994 Td
+(You must write cleaning pipelines to normalize whitespace, remove non-ascii characters, and handle bullet) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 258.2364566929132934 Td
+(points.) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.071 0.094 0.149 rg
+45.354330708661422 227.3388188976377933 Td
+(2. Section Segmentation) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 199.559291338582625 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 199.559291338582625 Td
+(Structural Analysis: Before extracting details, the system must identify and split the text into) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 184.819133858267719 Td
+(logical sections: Contact Info, Summary, Experience, Education, Skills, and Projects.) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 166.6774015748031843 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 166.6774015748031843 Td
+(Heuristics: Use keyword-based heuristics \(e.g., detecting lines containing "Experience" or "Work History" in) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 151.9372440944882783 Td
+(bold/caps\) to segment the document accurately.) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.071 0.094 0.149 rg
+45.354330708661422 121.0396062992126645 Td
+(3. Information Extraction \(The Core NLP Task\)) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 93.2600787401576099 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 93.2600787401576099 Td
+(Contact Details: Use complex Regular Expressions \(RegEx\) to reliably extract Email) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 78.5199212598427039 Td
+(Addresses, Phone Numbers, and LinkedIn/Portfolio URLs.) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.58 0.639 0.722 rg
+45.354330708661422 25.5118110236220446 Td
+(Persevex Project Dashboard) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.58 0.639 0.722 rg
+509.2856692913384791 25.5118110236220446 Td
+(Page 2 of 4) Tj
+ET
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 8 0 R
+>>
+endobj
+8 0 obj
+<<
+/Length 6111
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 785.1970866141732586 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 785.1970866141732586 Td
+(Named Entity Recognition \(NER\): Train or fine-tune an NER model \(using spaCy or HuggingFace) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 770.4569291338582389 Td
+(Transformers\) to detect Candidate Names, University Names, and Degree Titles.) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 752.3151968503937042 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 752.3151968503937042 Td
+(Skill Extraction: mapping text against a predefined database of skills \(e.g., "Python", "Machine Learning",) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 737.5750393700786844 Td
+("Project Management"\). You must handle variations \(e.g., "React" vs "React.js"\).) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.071 0.094 0.149 rg
+45.354330708661422 706.6774015748030706 Td
+(4. Data Structuring) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 678.8978740157480161 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 678.8978740157480161 Td
+(The final output must be a clean, nested JSON object. For example, the 'Experience' section) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 664.1577165354329964 Td
+(should be a list of objects, each containing Company Name, Job Title, Dates, and Description.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 641.7640157480313974 Td
+(---) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.071 0.094 0.149 rg
+45.354330708661422 599.5277952755905062 Td
+(Prerequisites) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 571.748267716535338 Td
+(To successfully complete this project, you should possess the following skills:) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 542.2679527559054122 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 542.2679527559054122 Td
+(Programming: Intermediate to Advanced Python.) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 524.1262204724407638 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 524.1262204724407638 Td
+(Libraries: spaCy, NLTK, pdfminer.six, python-docx, pandas.) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 505.9844881889762291 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 505.9844881889762291 Td
+(Concepts: Regular Expressions \(Regex\), Named Entity Recognition \(NER\), Text Preprocessing) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 491.2443307086612663 Td
+(\(Tokenization, Lemmatization\), JSON Data Structures.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 468.8506299212597241 Td
+(---) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.071 0.094 0.149 rg
+45.354330708661422 426.6144094488187761 Td
+(Deliverables) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 394.5829133858266005 Td
+(1. The Parser Engine) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 365.1025984251966747 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 365.1025984251966747 Td
+(A Python module \(parser.py\) containing a class ResumeParser. It should have a method) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 350.3624409448817119 Td
+(parsefile\(filepath\) that returns a dictionary/JSON object.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 327.9687401574801697 Td
+(2. The Skill Knowledge Base) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 298.488425196850244 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 298.488425196850244 Td
+(A CSV or JSON file acting as your "Skill Ontology" \(a comprehensive list of technical and soft skills used) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 283.748267716535338 Td
+(for matching\).) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 261.3545669291338527 Td
+(3. API Wrapper \(Bonus/Advanced\)) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 231.8742519685039269 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 231.8742519685039269 Td
+(A simple Flask or FastAPI script that allows a user to upload a file via a local web server and receive the) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 217.1340944881889072 Td
+(parsed JSON response.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 194.7403937007874219 Td
+(4. Project Documentation) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 165.2600787401574962 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 165.2600787401574962 Td
+(A README.md file explaining how to run the parser, required dependencies, and the logic used for) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 150.5199212598425902 Td
+(section segmentation.) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.141 0.165 0.22 rg
+45.354330708661422 128.1262204724411049 Td
+(---) Tj
+ET
+BT
+/F2 12 Tf
+13.7999999999999989 TL
+0.071 0.094 0.149 rg
+45.354330708661422 85.8900000000001 Td
+(Project Timeline & Deadlines) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.58 0.639 0.722 rg
+45.354330708661422 25.5118110236220446 Td
+(Persevex Project Dashboard) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.58 0.639 0.722 rg
+509.2856692913384791 25.5118110236220446 Td
+(Page 3 of 4) Tj
+ET
+endstream
+endobj
+9 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 4217
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 785.1970866141732586 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 785.1970866141732586 Td
+(Week 1: Ingestion & Segmentation) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+87.8740157480315105 767.0553543307086102 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 767.0553543307086102 Td
+(Goal: text extraction and structural understanding.) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+87.8740157480315105 748.9136220472440755 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 748.9136220472440755 Td
+(Task: Build script to read PDF/DOCX. Implement logic to slice the text into specific sections) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 734.1734645669291695 Td
+(\(Education vs Experience\).) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 711.7797637795274568 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 711.7797637795274568 Td
+(Week 2: Regex & Contact Info) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+87.8740157480315105 693.6380314960629221 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 693.6380314960629221 Td
+(Goal: High-precision extraction of metadata.) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+87.8740157480315105 675.4962992125983874 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 675.4962992125983874 Td
+(Task: Implement Regex for Emails, Phone numbers, and Links. Normalize the data \(e.g., format all) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 660.7561417322833677 Td
+(phone numbers to a standard international format\).) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 638.3624409448817687 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 638.3624409448817687 Td
+(Week 3: Entity & Skill Extraction) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+87.8740157480315105 620.220708661417234 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 620.220708661417234 Td
+(Goal: Intelligent parsing.) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+87.8740157480315105 602.0789763779525856 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 602.0789763779525856 Td
+(Task: Use spaCy to find Names and Organizations. Implement the keyword matching logic to extract) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 587.3388188976376796 Td
+(skills from the text against your Knowledge Base.) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+59.5275590551181182 564.9451181102360806 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+82.2047244094488292 564.9451181102360806 Td
+(Week 4: Structuring & Final Polish) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+87.8740157480315105 546.8033858267715459 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 546.8033858267715459 Td
+(Goal: Production-ready output.) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+87.8740157480315105 528.6616535433068975 Td
+(-) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 528.6616535433068975 Td
+(Task: Assemble all components into a single JSON output structure. Test against 10-20 different) Tj
+ET
+BT
+/F1 9.8 Tf
+11.2699999999999996 TL
+0.141 0.165 0.22 rg
+110.5511811023622215 513.9214960629919915 Td
+(resume layouts to ensure robustness. Submit final code.) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.58 0.639 0.722 rg
+45.354330708661422 25.5118110236220446 Td
+(Persevex Project Dashboard) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.58 0.639 0.722 rg
+509.2856692913384791 25.5118110236220446 Td
+(Page 4 of 4) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R 7 0 R 9 0 R ]
+/Count 4
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+21 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+22 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+23 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+24 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 11 0 R
+/F2 12 0 R
+/F3 13 0 R
+/F4 14 0 R
+/F5 15 0 R
+/F6 16 0 R
+/F7 17 0 R
+/F8 18 0 R
+/F9 19 0 R
+/F10 20 0 R
+/F11 21 0 R
+/F12 22 0 R
+/F13 23 0 R
+/F14 24 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+25 0 obj
+<<
+/Producer (jsPDF 4.2.1)
+/CreationDate (D:20260922215938+05'30')
+>>
+endobj
+26 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 27
+0000000000 65535 f 
+0000017964 00000 n 
+0000019804 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000000798 00000 n 
+0000000935 00000 n 
+0000007256 00000 n 
+0000007393 00000 n 
+0000013556 00000 n 
+0000013694 00000 n 
+0000018039 00000 n 
+0000018165 00000 n 
+0000018296 00000 n 
+0000018430 00000 n 
+0000018568 00000 n 
+0000018692 00000 n 
+0000018821 00000 n 
+0000018953 00000 n 
+0000019089 00000 n 
+0000019217 00000 n 
+0000019344 00000 n 
+0000019473 00000 n 
+0000019606 00000 n 
+0000019708 00000 n 
+0000020057 00000 n 
+0000020143 00000 n 
+trailer
+<<
+/Size 27
+/Root 26 0 R
+/Info 25 0 R
+/ID [ <B9A2BCC7BE22B43AFB86085FF869A958> <B9A2BCC7BE22B43AFB86085FF869A958> ]
+>>
+startxref
+20247
+%%EOF

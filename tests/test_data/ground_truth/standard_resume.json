@@ -1,0 +1,29 @@
+{
+  "contact": {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "(555) 123-4567",
+    "links": [
+      "github.com/johndoe"
+    ]
+  },
+  "summary": "Experienced Software Engineer.",
+  "experience": [
+    {
+      "company": "Google",
+      "role": "Software Engineer"
+    }
+  ],
+  "education": [
+    {
+      "institution": "MIT",
+      "degree": "B.S. Computer Science"
+    }
+  ],
+  "skills": [
+    "Python",
+    "Java",
+    "Machine Learning",
+    "AWS"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "category": "validation",
+  "contact": {
+    "name": "Sara Jones",
+    "email": "sara.jones@netflix.com"
+  },
+  "experience": [
+    {
+      "company": "Netflix",
+      "role": "Data Scientist"
+    }
+  ],
+  "education": [
+    {
+      "institution": "MIT",
+      "degree": "PhD Physics"
+    }
+  ],
+  "skills": [
+    "Machine Learning",
+    "SQL",
+    "Python"
+  ]
+}

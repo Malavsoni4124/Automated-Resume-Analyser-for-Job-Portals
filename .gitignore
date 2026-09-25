@@ -1,0 +1,31 @@
+# Environments
+venv/
+env/
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Node
+node_modules/
+dist/
+build/
+
+# Database
+*.db
+*.sqlite3
+
+# Models & Weights (Very Large)
+models/
+*.safetensors
+
+# OS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/

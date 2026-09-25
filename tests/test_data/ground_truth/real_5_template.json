@@ -1,0 +1,20 @@
+{
+  "category": "validation",
+  "contact": {
+    "name": "Candidate 5",
+    "email": "candidate5@email.com"
+  },
+  "experience": [
+    {
+      "company": "Startup 5",
+      "role": "Developer"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University 5",
+      "degree": "BSc"
+    }
+  ],
+  "skills": []
+}

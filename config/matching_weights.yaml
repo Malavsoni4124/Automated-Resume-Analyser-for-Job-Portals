@@ -1,0 +1,6 @@
+# Weights for Composite Match Score Engine
+
+semantic_similarity: 0.40
+skill_overlap: 0.30
+experience_fit: 0.20
+education_fit: 0.10

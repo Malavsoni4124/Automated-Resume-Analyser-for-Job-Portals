@@ -1,0 +1,52 @@
+# Core ML / NLP
+sentence-transformers>=2.6,<3.0
+spacy>=3.7,<3.8
+faiss-cpu>=1.8,<2.0
+
+# Document Parsing
+pdfminer.six>=20231228
+python-docx>=1.1,<2.0
+
+# Data / Utils
+pydantic>=2.6,<3.0
+pydantic-settings>=2.2,<3.0
+pyyaml>=6.0,<7.0
+python-dateutil>=2.9,<3.0
+numpy>=1.26,<2.0
+scipy>=1.13,<2.0
+
+# Web Framework
+fastapi>=0.110,<0.115
+uvicorn[standard]>=0.28,<0.30
+python-multipart>=0.0.9,<0.1.0
+
+# Database
+sqlalchemy>=2.0,<2.1
+aiosqlite>=0.20,<0.21
+alembic>=1.13,<2.0
+asyncpg>=0.29,<0.30
+psycopg2-binary>=2.9,<3.0
+greenlet>=3.0,<4.0
+
+# Auth / Security
+pyjwt>=2.8,<3.0
+passlib[bcrypt]>=1.7,<2.0
+bcrypt>=3.2.0,<4.0.0
+
+# Task Queue
+celery>=5.3,<6.0
+redis>=4.2.0,<5.0
+
+# Caching / Rate Limiting
+fastapi-limiter==0.1.6
+fastapi-cache2[redis]>=0.2,<0.3
+
+# AI / LLM
+google-generativeai>=0.8,<1.0
+
+# HTTP
+httpx>=0.27,<0.28
+
+# Testing
+pytest>=8.0,<9.0
+pytest-asyncio>=0.23,<0.24

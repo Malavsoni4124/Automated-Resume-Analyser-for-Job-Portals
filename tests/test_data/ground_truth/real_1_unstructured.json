@@ -1,0 +1,28 @@
+{
+  "category": "validation",
+  "contact": {
+    "name": "Michael Chang",
+    "email": "michael.c@example.org",
+    "phone": "555-987-6543"
+  },
+  "experience": [
+    {
+      "company": "Amazon",
+      "role": "Senior Engineer"
+    },
+    {
+      "company": "Amazon",
+      "role": "Architect"
+    }
+  ],
+  "education": [
+    {
+      "institution": "UC Berkeley",
+      "degree": "MS Computer Science"
+    }
+  ],
+  "skills": [
+    "Python",
+    "Kubernetes"
+  ]
+}
