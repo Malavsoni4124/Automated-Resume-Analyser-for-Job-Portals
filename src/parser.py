@@ -13,10 +13,12 @@ from .extractors.orchestrator import ExtractorOrchestrator
 logger = logging.getLogger(__name__)
 
 class ResumeParser:
-    def __init__(self, llm_extractor_override=None):
+    def __init__(self, llm_extractor_override=None, enable_pii_redaction: bool = False):
         """
         llm_extractor_override allows tests to inject a mock LLM.
+        enable_pii_redaction: when True, redacts PII for blind hiring before parsing.
         """
+        self.enable_pii_redaction = enable_pii_redaction
         self.regex = RegexExtractor()
         self.spacy = SpacyExtractor()
         
@@ -33,13 +35,13 @@ class ResumeParser:
             class SectionClassification(BaseModel):
                 section: str
             if self.llm:
-                res = self.llm.extract_structured(
-                    f"Classify this header into one of: Contact, Summary, Experience, Education, Skills, Projects, Certifications. Header: {text}",
-                    SectionClassification
-                )
                 try:
+                    res = self.llm.extract_structured(
+                        f"Classify this header into one of: Contact, Summary, Experience, Education, Skills, Projects, Certifications. Header: {text}",
+                        SectionClassification
+                    )
                     return Section(res.section.title())
-                except ValueError:
+                except Exception:
                     return Section.UNKNOWN
             return Section.UNKNOWN
             
@@ -50,8 +52,8 @@ class ResumeParser:
             # 1. Ingestion
             raw_text = ingest_document(file_path)
             
-            # 1.5 Blind Hiring / PII Redaction
-            if hasattr(self.llm, "redact_pii"):
+            # 1.5 Blind Hiring / PII Redaction (opt-in)
+            if self.enable_pii_redaction and hasattr(self.llm, "redact_pii"):
                 raw_text = self.llm.redact_pii(raw_text)
             
             # 2. Segmentation
@@ -92,3 +94,28 @@ class ResumeParser:
         except Exception as e:
             logger.error(f"Unexpected error during parsing: {e}")
             return ParsedResumeOutput(status="error", message=str(e), data=None)
+
+    def parse_file(self, file_path: str) -> dict:
+        """Parses a resume file and returns a clean, structured dictionary / JSON object.
+        Adheres directly to Deliverable 1 (ResumeParser.parse_file).
+        """
+        output = self.parse(file_path)
+        if output.data is not None:
+            data_dict = output.data.model_dump() if hasattr(output.data, "model_dump") else output.data.dict()
+            return {
+                "status": output.status,
+                "message": output.message,
+                **data_dict
+            }
+        return {
+            "status": output.status,
+            "message": output.message,
+            "contact": {},
+            "summary": None,
+            "experience": [],
+            "education": [],
+            "skills": [],
+            "projects": [],
+            "certifications": []
+        }
+

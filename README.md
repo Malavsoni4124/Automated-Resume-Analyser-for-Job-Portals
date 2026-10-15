@@ -1,6 +1,36 @@
-# Aero ATS — AI-Powered Applicant Tracking System
+# Aero ATS — Automated Resume Analyzer for Job Portals
 
-> An intelligent, multi-tenant applicant tracking system powered by BERT semantic embeddings, multi-dimensional resume scoring, and a real-time React pipeline interface.
+> **🌐 Live Hosted Web Application:** [https://automated-resume-analyser-for-job-p.vercel.app/](https://automated-resume-analyser-for-job-p.vercel.app/)  
+> **Documentation:** [Project Full Documentation](project_documentation.md) | [PDF Report](project_documentation.pdf)  
+> An intelligent Applicant Tracking System (ATS) core engine powered by NLP text extraction, heuristic Section Segmentation, spaCy Named Entity Recognition (NER), BERT semantic embeddings, and an interactive React pipeline interface.
+
+---
+
+## 📌 Submission Deliverables Summary
+
+| Deliverable | File / Location | Description |
+|---|---|---|
+| **1. The Parser Engine** | [`parser.py`](parser.py) & [`src/parser.py`](src/parser.py) | `ResumeParser` class with `parse_file(file_path)` returning clean, nested JSON/dict output |
+| **2. Skill Knowledge Base** | [`skills.json`](skills.json) & [`skills_ontology.csv`](skills_ontology.csv) | Comprehensive ontology of 70+ technical and soft skills with synonym/alias mapping |
+| **3. API Wrapper** | [`api.py`](api.py) & [`src/api/routes.py`](src/api/routes.py) | Standalone FastAPI script serving `POST /parse` with interactive web UI and Swagger docs |
+| **4. Project Documentation** | [`README.md`](README.md) & [`project_documentation.md`](project_documentation.md) | Full setup, segmentation logic, dependencies, test suite, and live demonstration |
+
+---
+
+## 🔍 Section Segmentation Logic
+
+The system utilizes structural and keyword-based heuristics to partition unstructured resume text into standardized sections:
+1. **Keyword Heuristics (`SECTION_PATTERNS`):** Case-insensitive regular expressions match common resume section headers:
+   - **Contact Info:** `Contact`, `Personal Info`, `About Me`
+   - **Summary:** `Summary`, `Profile`, `Objective`, `Professional Summary`
+   - **Experience:** `Experience`, `Employment`, `Work History`, `Professional Experience`
+   - **Education:** `Education`, `Academic Background`, `Qualifications`
+   - **Skills:** `Skills`, `Technical Skills`, `Technologies`, `Core Competencies`
+   - **Projects:** `Projects`, `Personal Projects`, `Academic Projects`
+   - **Certifications:** `Certifications`, `Licenses`, `Courses`
+2. **Header Detection Criteria:** A line is identified as a header if its length is `< 60` characters and it matches one of the canonical section patterns.
+3. **Unknown Section Boundaries:** If a line is short (`< 40` chars), uppercase, and contains fewer than 5 words, it is flagged as an unknown header block and routed to the fallback classifier.
+4. **Resilient Fallback:** When headers vary significantly, the fallback classifier maps custom headers into the closest standard section or defaults safely to `Unknown`.
 
 ---
 
@@ -9,15 +39,18 @@
 | Feature | Status |
 |---|---|
 | AI resume parsing (PDF, DOCX, TXT) | ✅ |
+| Robust text cleaning & normalization | ✅ |
+| Heuristic section segmentation | ✅ |
+| Regex extraction for Email, Phone & URLs | ✅ |
+| spaCy NER for Candidate & Organization extraction | ✅ |
 | BERT semantic similarity scoring | ✅ |
 | Skill matching with synonym/alias ontology | ✅ |
+| Standalone API wrapper (`api.py`) | ✅ |
 | Multi-tenant isolation with JWT auth | ✅ |
 | Drag-and-drop Kanban pipeline | ✅ |
 | Bulk candidate actions (shortlist/hire/reject/delete) | ✅ |
 | Duplicate candidate detection | ✅ |
-| GitHub profile import | ✅ |
-| CSV export | ✅ |
-| Analytics dashboard | ✅ |
+| GitHub profile import & CSV export | ✅ |
 | Celery async processing with Redis | ✅ |
 | Docker Compose deployment | ✅ |
 
@@ -73,7 +106,33 @@ python -m spacy download en_core_web_sm
 cd frontend && npm install && cd ..
 ```
 
-### 2. Run the Application
+### 2. Run the Standalone Parser & API (Deliverables 1 & 3)
+
+**A. Run the CLI Parser (Deliverable 1):**
+```bash
+# Test with a PDF, DOCX, or TXT resume:
+python parser.py tests/test_data/resumes/standard_resume.pdf
+```
+
+**B. Use in Python Script:**
+```python
+from parser import ResumeParser
+
+parser = ResumeParser()
+result = parser.parse_file("path/to/resume.pdf")  # Returns structured dictionary/JSON
+print(result["contact"]["email"])
+print(result["skills"])
+```
+
+**C. Run the Standalone API Wrapper Web Server (Deliverable 3):**
+```bash
+python api.py
+# -> Web UI: http://localhost:8000 (Upload files directly via browser)
+# -> API Docs: http://localhost:8000/docs (Swagger interactive docs)
+```
+
+### 3. Run the Full Multi-Tenant ATS Application
+
 
 Start both the FastAPI backend and Vite frontend with a single command:
 

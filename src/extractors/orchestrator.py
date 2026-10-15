@@ -59,8 +59,145 @@ class ExtractorOrchestrator:
             "location": llm_results.get("location") # Spacy didn't extract location in our simple heuristic
         }
 
+    def _heuristic_experience_fallback(self, exp_text: str) -> list:
+        """Heuristic fallback to extract experiences using regex and spaCy when LLM is unavailable."""
+        import re
+        from ..schema import Experience
+
+        experiences = []
+        date_pattern = re.compile(
+            r"((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{4}|\d{4})\s*(?:-|–|to)\s*((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d{4}|\d{4}|Present|Current)",
+            re.IGNORECASE
+        )
+        single_year_pattern = re.compile(r"\b(19\d\d|20\d\d)\b")
+
+        blocks = [b.strip() for b in re.split(r"\n\s*\n", exp_text) if b.strip()]
+        for block in blocks:
+            lines = [l.strip() for l in block.split("\n") if l.strip()]
+            if not lines:
+                continue
+
+            company = None
+            role = None
+            start_date = None
+            end_date = None
+            bullet_points = []
+            desc_lines = []
+
+            # Check for dates in lines
+            for line in lines:
+                date_match = date_pattern.search(line)
+                if date_match and not start_date:
+                    start_date = date_match.group(1)
+                    end_date = date_match.group(2)
+                elif line.startswith(("-", "*", "•")):
+                    bullet_points.append(line.lstrip("-*• ").strip())
+                else:
+                    desc_lines.append(line)
+
+            # Heuristic for role and company from header lines
+            header_lines = desc_lines[:2] if len(desc_lines) >= 2 else desc_lines
+            for hline in header_lines:
+                if any(sep in hline for sep in ["|", " - ", " at ", "@", ","]):
+                    parts = re.split(r"\s*(?:\|| - | at |@|,)\s*", hline)
+                    if len(parts) >= 2:
+                        role = parts[0].strip()
+                        company = parts[1].strip()
+                        break
+                elif any(kw in hline.lower() for kw in ["engineer", "developer", "manager", "lead", "analyst", "intern", "consultant", "architect"]):
+                    role = hline.strip()
+                elif self.spacy:
+                    doc = self.spacy.nlp(hline)
+                    for ent in doc.ents:
+                        if ent.label_ == "ORG" and not company:
+                            company = ent.text
+
+            if not role and header_lines:
+                role = header_lines[0]
+            if not company and len(header_lines) > 1:
+                company = header_lines[1]
+
+            if role or company or bullet_points:
+                experiences.append(Experience(
+                    company=company,
+                    role=role,
+                    start_date=start_date,
+                    end_date=end_date,
+                    description="\n".join(bullet_points) if bullet_points else ("\n".join(desc_lines) if desc_lines else None),
+                    bullet_points=bullet_points
+                ))
+
+        return experiences
+
+    def _heuristic_education_fallback(self, edu_text: str) -> list:
+        """Heuristic fallback to extract education using regex and spaCy when LLM is unavailable."""
+        import re
+        from ..schema import Education
+
+        educations = []
+        degree_pattern = re.compile(
+            r"\b(B\.?S\.?|B\.?Tech|B\.?E\.?|M\.?S\.?|M\.?Tech|Master|Bachelor|Ph\.?D\.?|Associate|Diploma|High School|B\.?Sc|BCA|MCA)\b",
+            re.IGNORECASE
+        )
+        institution_pattern = re.compile(
+            r"\b([A-Z][a-zA-Z\s&]+(?:University|College|Institute|School|Academy))\b",
+            re.IGNORECASE
+        )
+        gpa_pattern = re.compile(r"(?:GPA|CGPA|Grade)[\s:]*([0-9]+(?:\.[0-9]+)?(?:\s*/\s*[0-9]+(?:\.[0-9]+)?)?)", re.IGNORECASE)
+        date_pattern = re.compile(r"\b(19\d\d|20\d\d)\s*(?:-|–|to)?\s*(19\d\d|20\d\d|Present)?\b", re.IGNORECASE)
+
+        blocks = [b.strip() for b in re.split(r"\n\s*\n", edu_text) if b.strip()]
+        for block in blocks:
+            degree = None
+            institution = None
+            start_date = None
+            end_date = None
+            gpa = None
+            major = None
+
+            d_match = degree_pattern.search(block)
+            if d_match:
+                degree = d_match.group(0)
+
+            inst_match = institution_pattern.search(block)
+            if inst_match:
+                institution = inst_match.group(0).strip()
+            elif self.spacy:
+                doc = self.spacy.nlp(block)
+                for ent in doc.ents:
+                    if ent.label_ == "ORG":
+                        institution = ent.text
+                        break
+
+            gpa_match = gpa_pattern.search(block)
+            if gpa_match:
+                gpa = gpa_match.group(1)
+
+            date_match = date_pattern.search(block)
+            if date_match:
+                start_date = date_match.group(1)
+                end_date = date_match.group(2)
+
+            for line in block.split("\n"):
+                if "in " in line.lower() and degree:
+                    parts = line.lower().split("in ", 1)
+                    if len(parts) > 1:
+                        major = parts[1].split(",")[0].split("-")[0].strip().title()
+
+            if institution or degree:
+                educations.append(Education(
+                    institution=institution,
+                    degree=degree,
+                    major=major,
+                    start_date=start_date,
+                    end_date=end_date,
+                    gpa=gpa
+                ))
+
+        return educations
+
     def process_experience(self, exp_text: str) -> list:
-        # LLM is best for nested structured data like Experience
+        # LLM is preferred for nested structured data like Experience
         from ..schema import Experience
         from pydantic import BaseModel, Field
         from typing import List
@@ -74,10 +211,12 @@ class ExtractorOrchestrator:
         try:
             if self.llm:
                 result = self.llm.extract_structured(exp_text, ExpList)
-                return result.experiences
+                if result and result.experiences:
+                    return result.experiences
         except Exception as e:
-            logger.error(f"LLM extraction failed for Experience: {e}")
-        return []
+            logger.info(f"LLM extraction for Experience failed or unavailable ({e}). Using heuristic extractor.")
+
+        return self._heuristic_experience_fallback(exp_text)
 
     def process_education(self, edu_text: str) -> list:
         from ..schema import Education
@@ -93,7 +232,10 @@ class ExtractorOrchestrator:
         try:
             if self.llm:
                 result = self.llm.extract_structured(edu_text, EduList)
-                return result.educations
+                if result and result.educations:
+                    return result.educations
         except Exception as e:
-            logger.error(f"LLM extraction failed for Education: {e}")
-        return []
+            logger.info(f"LLM extraction for Education failed or unavailable ({e}). Using heuristic extractor.")
+
+        return self._heuristic_education_fallback(edu_text)
+

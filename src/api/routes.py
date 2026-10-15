@@ -31,6 +31,34 @@ router = APIRouter()
 ALLOWED_EXTENSIONS = {".pdf", ".docx", ".doc", ".txt"}
 VALID_STATUSES = {"new", "shortlisted", "rejected", "hired"}
 
+@router.post("/parse", summary="Direct Resume Parser API Wrapper")
+async def parse_resume_direct(
+    file: UploadFile = File(...),
+    parser = Depends(get_resume_parser)
+):
+    """Direct API Wrapper endpoint (Deliverable 3):
+    Upload a resume file (PDF, DOCX, TXT) and receive the structured parsed JSON response.
+    """
+    ext = os.path.splitext(file.filename or "")[1].lower()
+    if ext not in ALLOWED_EXTENSIONS:
+        raise HTTPException(
+            status_code=400, 
+            detail=f"Unsupported file format '{ext}'. Allowed: {', '.join(ALLOWED_EXTENSIONS)}"
+        )
+    
+    with tempfile.NamedTemporaryFile(delete=False, suffix=ext) as tmp:
+        content = await file.read()
+        tmp.write(content)
+        tmp_path = tmp.name
+
+    try:
+        parsed_result = parser.parse_file(tmp_path)
+        return parsed_result
+    finally:
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
+
+
 # ─────────────────────────────────────────
 #  Request / Response Schemas
 # ─────────────────────────────────────────
